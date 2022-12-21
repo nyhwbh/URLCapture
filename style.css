@@ -3,8 +3,16 @@ body{
 }
 
 #captureBackground{
+    position: relative;
     background-color: black;
     opacity: 0.55;
     width: 100vw;
     height: 100vh;
+}
+
+#capture{
+    position: absolute;
+    background-color: white;
+    border: 3px solid red;
+    
 }
