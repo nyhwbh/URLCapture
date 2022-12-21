@@ -1,0 +1,26 @@
+{
+  "name": "URLCapture",
+  "description": "It's screencapture program with site URL",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+      "service_worker": ["background.js"]
+    },
+  "permissions": ["pageCapture"],
+  "action": {
+    "default_popup": "window.html",
+    "default_icon": {
+      "16": "capture-16.png",
+      "128": "capture-128.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      }
+    }
+  },
+   "options_page": "options.html"
+}
