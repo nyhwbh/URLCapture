@@ -1,26 +1,15 @@
 {
+  "manifest_version": 2,
   "name": "URLCapture",
-  "description": "It's screencapture program with site URL",
-  "version": "1.0",
-  "manifest_version": 3,
-  "background": {
-      "service_worker": ["background.js"]
-    },
-  "permissions": ["pageCapture"],
-  "action": {
-    "default_popup": "window.html",
-    "default_icon": {
-      "16": "capture-16.png",
-      "128": "capture-128.png"
-    }
+  "version": "1.1",
+  "minimum_chrome_version": "23",
+  "icons": {
+    "16": "icon_16.png",
+    "128": "icon_128.png"
   },
-  "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+S",
-        "mac": "Command+Shift+S"
-      }
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
     }
-  },
-   "options_page": "options.html"
+  }
 }
