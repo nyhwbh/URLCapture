@@ -1,9 +1,9 @@
-// import html2canvas from "html2canvas";
+// import canvas from "html2canvas"
 
 let isSetted = false;
 let capture_x = 0;
 let capture_y = 0;
-const captureBackground= document.getElementById("captureBackground");
+const captureBackground= document.getElementById("body");
     
 captureBackground.addEventListener("click", (e) => {
     if(!isSetted){
@@ -24,7 +24,7 @@ captureBackground.addEventListener("click", (e) => {
 // });
 
 const addCaptureArea = (e) => {
-    let captureBackground = document.getElementById("captureBackground");
+    let captureBackground = document.getElementById("body");
 
     let captureArea = document.createElement('div');
     captureArea.setAttribute('id','capture');
@@ -48,7 +48,8 @@ const setCaptureArea = (e) => {
     captureArea.style.height = height + "px";
     
 }
-// html2canvas(document.querySelector("#capture")).then((canvas) => {
+
+// canvas(document.querySelector("#capture")).then((canvas) => {
 //     // 파일이름을 현제시간으로 만들기
 //     let newfile =  new Date().toString()
 //     let filename = newfile.substring(0,24);
@@ -56,15 +57,15 @@ const setCaptureArea = (e) => {
 //     saveAs(canvas.toDataURL("image/jpg"), filename);
 // });
 
-const saveAs = (url, filename) => {
-    let link = document.createElement('a');
-    if( typeof link.download === 'string'){
-        link.href = url;
-        link.download = filename;
-        document.body.appendChild(link);
-        link.click();
-        document.body.appendChild(link);
-    } else {
-        window.open(url);
-    }
-}
+// const saveAs = (url, filename) => {
+//     let link = document.createElement('a');
+//     if( typeof link.download === 'string'){
+//         link.href = url;
+//         link.download = filename;
+//         document.body.appendChild(link);
+//         link.click();
+//         document.body.appendChild(link);
+//     } else {
+//         window.open(url);
+//     }
+// }
