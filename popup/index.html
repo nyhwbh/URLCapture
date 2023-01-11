@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 <body>
-    <div>
-        <button id="self_sellection">직접지정</button>
-        <button id="auto_sellection">영역선택</button>
-        <button id="whole_page_sellection">전체페이지</button>
-        <button id="present_sellection">전체화면</button>
+    <div id="capture_fuctions">
+        <button id="self_sellection">
+            <i class="fa-regular fa-square-dashed-circle-plus"></i>
+            <p>직접지정</p>
+        </button>
+        <button id="auto_sellection"> 
+            <i class="fa-light fa-objects-column"></i>
+            <p>영역지정</p>
+        </button>
+        <button id="whole_page_sellection"> 
+            <i class="fa-light fa-arrow-down-to-square"></i>
+            <p>전체페이지</p>
+        </button>
+        <button id="present_sellection"> 
+            <i class="fa-regular fa-square-dashed"></i>
+            <p>전체화면</p>
+        </button>
+    </div>
+    <hr>
+    <div id="save_options">
+        <select name="save_work_options">
+            <option value="">결과 미리보기</option>
+            <option value="클립보드로 복사">클립보드로 복사</option>
+            <option value="내 PC로 저장">내 PC로 저장</option>
+            <option value="이미지로 검색">이미지로 검색</option>
+        </select>
+        <div id="blank">  </div>
+        <select name="save_type_options">
+            <option value="">JPG</option>
+            <option value="PNG">PNG</option>
+        </select>
+        <div id="blank2">  </div>
+    </div>
+    <hr>
+    <div id="repasitory_control">
+        <input type="button" id="scraper_repasitory" value="저장소 열기">
+        <input type="button" id="change_repasitory_location" value="저정소 위치 변경">
     </div>
     <script src="app.js"></script>
 </body>

@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ImgScraper",
+  
   "description": "웹 페이지의 캡처와 함께 캡처한 사이트의 URL을 따로 저장하는 웹앱 입니다.",
   "version": "1.0",
   "action": {
