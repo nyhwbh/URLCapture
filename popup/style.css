@@ -79,6 +79,8 @@ input{
     border: 0px solid black;
     margin-right: 1px;
     color: antiquewhite;
+    height: 25px;
+    padding: 4px;
 }
 
 #repasitory_control{
@@ -86,4 +88,5 @@ input{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 25px;
 }
