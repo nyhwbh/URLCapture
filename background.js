@@ -1,17 +1,9 @@
-chrome.app.runtime.onLaunched.addListener(function () {
-  // Center window on screen.
-  var screenWidth = screen.availWidth;
-  var screenHeight = screen.availHeight;
-  var width = 500;
-  var height = 300;
-
-  chrome.app.window.create("index.html", {
-    id: "urlCaptureID",
-    outerBounds: {
-      width: width,
-      height: height,
-      left: Math.round((screenWidth - width) / 2),
-      top: Math.round((screenHeight - height) / 2),
-    },
+whale.browserAction.onClicked.addListener(() => {
+  whale.tabs.create({
+      url: `http://news.naver.com/`
   });
-});
+})whale.browserAction.onClicked.addListener(() => {
+    whale.tabs.create({
+        url: `http://news.naver.com/`
+    });
+})

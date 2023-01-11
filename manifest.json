@@ -1,29 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Imgscraper",
-  "version": "versionString",
-
-  "default_locale": "ko",
+  "name": "ImgScraper",
   "description": "웹 페이지의 캡처와 함께 캡처한 사이트의 URL을 따로 저장하는 웹앱 입니다.",
-
-  "browser_action": {
+  "version": "1.0",
+  "action": {
+    "default_popup" : "popup/index.html",
     "default_icon": {               
       "16": "images/icon_16.png",
       "128": "images/icon_128.png"
     },
     "default_title" : "ImgScraper"
   },
-  "mobile_user_agent": false ,
-
   "background": {
-    "scripts" : [
-      "background.js"
-    ],
-    "persistent": false
-  },
-  
-  "commands": {
-    "default": "Ctrl+Shift+S",
-    "mac": "Command+Shift+S"
+    "service_worker" : "background.js"
   }
 }
