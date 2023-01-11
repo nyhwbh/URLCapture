@@ -1,15 +1,27 @@
 {
-  "manifest_version": 2,
-  "name": "URLCapture",
-  "version": "1.1",
-  "minimum_chrome_version": "23",
-  "icons": {
-    "16": "icon_16.png",
-    "128": "icon_128.png"
-  },
-  "app": {
-    "background": {
-      "scripts": ["main.js"]
+  "manifest_version": 3,
+  "name": "Imgscraper",
+  "version": "versionString",
+
+  "default_locale": "ko",
+  "description": "웹 페이지의 캡처와 함께 캡처한 사이트의 URL을 따로 저장하는 웹앱 입니다.",
+
+  "browser_action": {
+    "default_icon": {               
+      "16": "images/icon_16.png",
+      "128": "images/icon_128.png"
     }
+  },
+
+  "background": {
+    "scripts" : [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  
+  "commands": {
+    "default": "Ctrl+Shift+S",
+    "mac": "Command+Shift+S"
   }
 }
