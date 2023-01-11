@@ -10,8 +10,10 @@
     "default_icon": {               
       "16": "images/icon_16.png",
       "128": "images/icon_128.png"
-    }
+    },
+    "default_title" : "ImgScraper"
   },
+  "mobile_user_agent": false ,
 
   "background": {
     "scripts" : [
